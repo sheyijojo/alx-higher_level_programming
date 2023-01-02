@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 3-rectangle
+"""Module 2-rectangle
 Defines a Rectangle class.
 """
 
@@ -15,18 +15,6 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-
-    def __str__(self):
-        """Returns an informal and nicely printable string representation
-        of a Rectangle instance, filled with the '#' character."""
-        if self.__height == 0 or self.__width == 0:
-            return ''
-        rec_str = ''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                rec_str += '#'
-            rec_str += '\n'
-        return rec_str[:-1]
 
     @property
     def width(self):
